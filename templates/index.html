@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		button
+		{
+			margin: 4px 2px;
+			padding: 15px 60px;
+			text-align: center;
+
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>electronic product recommendation </title>
+	<!--<link rel="icon" type="text/x-icon" href="icon.ico"> -->
+</head>
+<body>
+	<div >
+		<h1>product prediction</h1>
+		<form action="{{url_for('predict')}}" method="POST">
+		
+		<input type="text" id="pn" name="product name" placeholder="PRODUCT NAME" required="required" >
+
+		<button type="submit" class="btn btn-primary btn-block btn-large">GO</button> 
+		<!--<h1 id="demo"></h1>
+		<script>
+		function myfunction() {
+			var x=document.getElementById("pn").value;
+			document.getElementById("demo").innerHTML=x;
+		}
+		</script>
+		--><br><br>
+		{{pre_text}}
+		</form>
+	</div>
+</body>
+</html>
