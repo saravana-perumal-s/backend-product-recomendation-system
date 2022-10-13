@@ -1,0 +1,5 @@
+create a python environment
+
+https://docs.python.org/3/library/venv.html
+
+install all the needed project libraries using pip in command line
